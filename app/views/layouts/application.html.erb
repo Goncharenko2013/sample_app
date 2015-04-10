@@ -1,14 +1,24 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-  <title>SampleApp</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
+  
+<title>Ruby on Rails Tutorial Sample App | <%= yield(:title) %></title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-no-turbolinks' => true %>
+
+  
 
   <%= csrf_meta_tags %>
+
 </head>
+
 <body>
+
 
 <%= yield %>
 
+
 </body>
+
 </html>
